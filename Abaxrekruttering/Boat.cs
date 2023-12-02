@@ -2,9 +2,14 @@ namespace Abaxrekruttering;
 
 public class Boat : Vehicle
 {
-    public Boat(string registration, int effect, int maxSpeed, string color, VelocityUnit velocityUnit,
-        VehicleType vehicleType) : base(registration, effect, maxSpeed, color, velocityUnit, vehicleType)
+    private int _maxSpeed;
+    private VelocityUnit _velocityUnit;
+    private int _grossTonnage;
+    public Boat(string registration, int effect, VehicleType vehicleType, int maxSpeed, VelocityUnit velocityUnit, int grossTonnage) : base(registration, effect, vehicleType)
     {
+        _maxSpeed = maxSpeed;
+        _velocityUnit = velocityUnit;
+        _grossTonnage = grossTonnage;
     }
 
     protected override void PrintInfo()
