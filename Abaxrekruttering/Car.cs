@@ -2,25 +2,24 @@ namespace Abaxrekruttering;
 
 class Car : Vehicle
 {
-    protected string Color;
-    protected int MaxSpeed;
-    protected VelocityUnit VelocityUnit;
+    private readonly string _color;
+    private readonly int _maxSpeed;
+    private readonly VelocityUnit _velocityUnit;
     
     public Car(string registration, int effect, VehicleType vehicleType, string color, int maxSpeed, VelocityUnit velocityUnit) : base(registration, effect, vehicleType)
     {
-        Color = color;
-        MaxSpeed = maxSpeed;
-        VelocityUnit = velocityUnit;
+        _color = color;
+        _maxSpeed = maxSpeed;
+        _velocityUnit = velocityUnit;
     }
 
-    protected override void PrintInfo()
+    public override void PrintInfo()
     {
-        throw new NotImplementedException();
+        Console.WriteLine("Registration: " + Registration);
+        Console.WriteLine("Effect: " + Effect);
+        Console.WriteLine("Vehicle Type: " + VehicleType);
+        Console.WriteLine("Color: " + _color);
+        Console.WriteLine("Max Speed: " + _maxSpeed + _velocityUnit);
+        Console.WriteLine(new string('-', 10));
     }
-
-    public void Drive()
-    {
-        throw new NotImplementedException();
-    }
-
 }

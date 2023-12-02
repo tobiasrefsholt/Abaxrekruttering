@@ -13,5 +13,5 @@ public abstract class Vehicle
         VehicleType = vehicleType;
     }
 
-    protected abstract void PrintInfo();
+    public abstract void PrintInfo();
 }
