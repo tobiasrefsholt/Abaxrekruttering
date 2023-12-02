@@ -17,9 +17,9 @@ public class Boat : Vehicle
     public override void PrintInfo()
     {
         Console.WriteLine("Registration: " + Registration);
-        Console.WriteLine("Effect: " + Effect);
+        Console.WriteLine("Effect: " + Effect + " kw");
         Console.WriteLine("Vehicle Type: " + VehicleType);
-        Console.WriteLine("Max Speed: " + _maxSpeed + _velocityUnit);
+        Console.WriteLine("Max Speed: " + _maxSpeed + _velocityUnit.GetDisplayName());
         Console.WriteLine("Gross Tonnage: " + _grossTonnage);
         Console.WriteLine(new string('-', 10));
     }

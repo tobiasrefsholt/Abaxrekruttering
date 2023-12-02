@@ -17,11 +17,11 @@ public class Plane : Vehicle
     public override void PrintInfo()
     {
         Console.WriteLine("Registration: " + Registration);
-        Console.WriteLine("Effect: " + Effect);
+        Console.WriteLine("Effect: " + Effect + " kw");
         Console.WriteLine("Vehicle Type: " + VehicleType);
-        Console.WriteLine("Wing Span: " + _wingSpan);
-        Console.WriteLine("Weight without cargo: " + _weightNoCargo + "kg");
-        Console.WriteLine("Max Cargo Weight: " + _maxCargoWeight);
+        Console.WriteLine("Wing Span: " + _wingSpan + " m");
+        Console.WriteLine("Weight without cargo: " + _weightNoCargo + " kg");
+        Console.WriteLine("Max Cargo Weight: " + _maxCargoWeight + " kg");
         Console.WriteLine(new string('-', 10));
     }
 }
