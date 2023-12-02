@@ -13,5 +13,5 @@ vehicleList.AddVehicle(boat);
 
 vehicleList.ShowAll();
 
-var compareMessage = vehicleList.Compare(0, 1) ? "Bilene er like" : "Bilene er ikke like";
+var compareMessage = car1.EqualsTo(car2) ? "Bilene er like" : "Bilene er ikke like";
 Console.WriteLine(compareMessage);

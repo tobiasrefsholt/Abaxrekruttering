@@ -14,4 +14,10 @@ public abstract class Vehicle
     }
 
     public abstract void PrintInfo();
+    
+    public bool EqualsTo(Vehicle vehicle)
+    {
+        return Registration == vehicle.Registration
+               && VehicleType == vehicle.VehicleType;
+    }
 }
